@@ -1,0 +1,18 @@
+// SPDX-License-Identifier: CC0-1.0
+.{
+    .name = "monocypher",
+    .version = "4.0.2",
+
+    .dependencies = .{
+        .upstream = .{
+            // FIXME: download from monocypher.org when zig gets TLS 1.2 support or they start supporting TLS 1.3
+            .url = "https://github.com/LoupVaillant/Monocypher/releases/download/4.0.2/monocypher-4.0.2.tar.gz",
+            .hash = "1220acde23f89676fb055f5f473019449fae9b657629e5450763c2543547e4c6f0c9",
+        },
+    },
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "README.md",
+    },
+}
